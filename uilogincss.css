@@ -1,0 +1,70 @@
+
+body {
+    /* background-color: rgb(170, 98, 98); */  /*might keep the image or change the background color*/
+    /*adding image for now*/
+  /*  background-image: url('https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds_181624-11068.jpg'); */
+    background-image: url('https://i.pinimg.com/736x/99/a3/a0/99a3a0cad1e93845a711da30f4ad1a1a.jpg');
+    background-repeat:no-repeat; /*Do not repeat the image*/
+    background-attachment:fixed; /* Does not move with text when scrolling */
+    background-size: cover; /* Scale image */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.container-login {
+    color:rgb(158, 42, 95);  /*changes the color of the 'Login-In' text*/
+    font-family: Arial, Helvetica, sans-serif; /*Change the font*/
+    display:flex;
+    justify-content: space-evenly; /*center*/
+    align-content: space-between; /*center*/
+    min-width: 100vw;  /* 100vw x-axis*/
+    min-height: 100vh;  /* 100vh y-axis*/
+    opacity: 0.78; /*adding transperancy to the box*/
+}
+
+
+.login-info { 
+    background-color: rgb(227, 211, 241); /*color of the box*/
+    display: flex;
+    flex-direction: column; /*add all items in a column*/
+    border-radius: 5%;  /*low % to give box rounded edges*/
+    width: 18vw; /*boxe's width*/
+    height: 40vh; /*boxes height*/
+  /*  justify-content: space-evenly; /*space evenly all boxes inside container*/
+    /*flex-wrap: wrap; */
+    gap: 10px; /*use gap instead of justify-content*/
+    align-self: center; /*places box in center*/
+    align-items: center; /*places username+password inputs to center*/
+    box-shadow: 10px 9px 40px -7px rgba(0,0,0,0.51);  /*cssmatic.com/box-shadow for code*/
+    background: rgb(176, 107, 138);
+    background: radial-gradient(circle, rgb(154, 199, 113) 0%, rgb(140, 49, 68) 100%);/*https://cssgradient.io changes box color*/ 
+}
+
+
+
+/*username + password input text color*/
+#username, #password {
+    color:rgb(186, 97, 56); /*color of iput text*/
+    background-color: rgb(185, 207, 207); 
+    border-radius: 5px;
+    margin-top: 5px; /*adding space between username and password*/  
+    width: 10vw;
+    height: 10%;
+    /*flex-shrink: 1px; */
+}
+
+@media (any-hover:hover) {  /*Add hovering over items*/
+    #username:hover,#password:hover {
+        background-color: rgb(116, 24, 82);
+    }
+    #button-submit:hover {
+        background-color: rgb(83, 83, 101);
+    }
+}  
+
+
+#button-submit {  
+    background-color: rgb(163, 121, 168);  /*add color to button*/
+    margin-top: 20px; /*adding space between username/password and button*/
+    border-radius: 10%; /*Button round edges*/
+    font-size: 15px; /*button size*/
+}
