@@ -1,14 +1,13 @@
 
 body {
-    /* background-color: rgb(170, 98, 98); */  /*might keep the image or change the background color*/
-    /*adding image for now*/
-  /*  background-image: url('https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds_181624-11068.jpg'); */
-    background-image: url('https://i.pinimg.com/736x/99/a3/a0/99a3a0cad1e93845a711da30f4ad1a1a.jpg');
+   /* background-image: url('https://i.pinimg.com/originals/86/c0/56/86c056f580da816ca10293d427b3d0df.jpg'); */
+    background-image: url('https://i.pinimg.com/736x/99/a3/a0/99a3a0cad1e93845a711da30f4ad1a1a.jpg'); 
     background-repeat:no-repeat; /*Do not repeat the image*/
     background-attachment:fixed; /* Does not move with text when scrolling */
     background-size: cover; /* Scale image */
     overflow: hidden; /* Hide scrollbars */
 }
+
 
 .container-login {
     color:rgb(158, 42, 95);  /*changes the color of the 'Login-In' text*/
@@ -16,8 +15,8 @@ body {
     display:flex;
     justify-content: space-evenly; /*center*/
     align-content: space-between; /*center*/
-    min-width: 100vw;  /* 100vw x-axis*/
-    min-height: 100vh;  /* 100vh y-axis*/
+    min-width: 100vw;  /* sets position of the container:  x-axis*/
+    min-height: 120vh;  /* sets position of the container: y-axis*/
     opacity: 0.78; /*adding transperancy to the box*/
 }
 
@@ -29,14 +28,16 @@ body {
     border-radius: 5%;  /*low % to give box rounded edges*/
     width: 18vw; /*boxe's width*/
     height: 40vh; /*boxes height*/
-  /*  justify-content: space-evenly; /*space evenly all boxes inside container*/
-    /*flex-wrap: wrap; */
+    word-break: break-word; /*keep the words within the box*/
     gap: 10px; /*use gap instead of justify-content*/
     align-self: center; /*places box in center*/
     align-items: center; /*places username+password inputs to center*/
-    box-shadow: 10px 9px 40px -7px rgba(0,0,0,0.51);  /*cssmatic.com/box-shadow for code*/
+    box-shadow: 10px 9px 40px -7px rgba(48, 31, 31, 0.51);  /*cssmatic.com/box-shadow for code*/
     background: rgb(176, 107, 138);
     background: radial-gradient(circle, rgb(154, 199, 113) 0%, rgb(140, 49, 68) 100%);/*https://cssgradient.io changes box color*/ 
+    font-size: 20px; /*set size of the "Log In" font*/ 
+    width: 350px; /*make the box wider*/
+    height: 300px;  /*make the box bigger*/
 }
 
 
@@ -47,9 +48,8 @@ body {
     background-color: rgb(185, 207, 207); 
     border-radius: 5px;
     margin-top: 5px; /*adding space between username and password*/  
-    width: 10vw;
+    width: 15vw;
     height: 10%;
-    /*flex-shrink: 1px; */
 }
 
 @media (any-hover:hover) {  /*Add hovering over items*/
